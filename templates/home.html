@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="welcome-section">
+    <h1><i class="fas fa-rocket"></i> Welcome to My Portfolio!</h1>
+    
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Ansuman Maharana - Profile Picture" class="profile-image">
+    
+    <p>Hello! I'm <strong>Ansuman Maharana</strong>, a passionate web developer and tech enthusiast currently studying Computer Science and Engineering at NIST, Berhampur.</p>
+    
+    <p>I enjoy building creative and functional projects using Python, Flask, and modern web technologies. Welcome to my digital space where innovation meets functionality!</p>
+    
+    <!-- Quick Stats -->
+    <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
+        <div style="text-align: center; padding: 1rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+            <i class="fas fa-graduation-cap" style="font-size: 2rem; color: #667eea; margin-bottom: 0.5rem;"></i>
+            <h3 style="margin: 0; color: #2c3e50;">Student</h3>
+            <p style="margin: 0; font-size: 0.9rem;">B.Tech CSE</p>
+        </div>
+        <div style="text-align: center; padding: 1rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+            <i class="fas fa-code" style="font-size: 2rem; color: #667eea; margin-bottom: 0.5rem;"></i>
+            <h3 style="margin: 0; color: #2c3e50;">Developer</h3>
+            <p style="margin: 0; font-size: 0.9rem;">Web & Python</p>
+        </div>
+        <div style="text-align: center; padding: 1rem; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+            <i class="fas fa-briefcase" style="font-size: 2rem; color: #667eea; margin-bottom: 0.5rem;"></i>
+            <h3 style="margin: 0; color: #2c3e50;">Intern</h3>
+            <p style="margin: 0; font-size: 0.9rem;">Asirush Pvt Ltd</p>
+        </div>
+    </div>
+    
+    <!-- Call to Action -->
+    <div style="margin-top: 3rem;">
+        <a href="{{ url_for('about') }}" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; margin: 0.5rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">
+            <i class="fas fa-user"></i> Learn More About Me
+        </a>
+        <a href="{{ url_for('contact') }}" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; margin: 0.5rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);">
+            <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+    </div>
+</div>
+
+{% endblock content %}

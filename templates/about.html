@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2><i class="fas fa-user-circle"></i> About Me</h2>
+
+<div style="text-align: center; margin: 2rem 0;">
+    <h3 style="color: #667eea; font-size: 1.5rem; margin-bottom: 1rem;">Personal Bio</h3>
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 15px; color: white; margin: 2rem 0;">
+        <p><strong><i class="fas fa-id-card"></i> Name:</strong> Ansuman Maharana</p>
+        <p><i class="fas fa-university"></i> Currently pursuing B.Tech in Computer Science and Engineering from the National Institute of Science and Technology, Berhampur.</p>
+        <p><i class="fas fa-heart"></i> I am a tech enthusiast who loves learning new things and exploring the world of development.</p>
+        <p><i class="fas fa-laptop-code"></i> As a web developer, I enjoy creating functional and innovative projects.</p>
+        <p><i class="fas fa-building"></i> Currently working as an Intern at Asirush Private Ltd.</p>
+    </div>
+</div>
+
+<div class="skills-section">
+    <h3><i class="fas fa-code"></i> Programming Languages & Technologies</h3>
+    <ul>
+        <li><i class="fab fa-python"></i> <strong>Python:</strong> Proficient in Python; experienced in building and hosting local servers using Flask framework.</li>
+        <li><i class="fab fa-java"></i> <strong>Java & C:</strong> Basic knowledge of Java and C programming languages.</li>
+        <li><i class="fas fa-globe"></i> <strong>Web Development:</strong> Familiar with web development concepts and modern web technologies.</li>
+        <li><i class="fab fa-git-alt"></i> <strong>Version Control:</strong> Experienced with Git and version control best practices.</li>
+    </ul>
+</div>
+
+<div class="skills-section">
+    <h3><i class="fas fa-tools"></i> Technical Skills</h3>
+    <ul>
+        <li><i class="fas fa-lightbulb"></i> <strong>Quick Learning:</strong> Able to learn and apply new technologies quickly and efficiently.</li>
+        <li><i class="fas fa-bug"></i> <strong>Problem Solving:</strong> Strong problem-solving and debugging capabilities.</li>
+        <li><i class="fas fa-server"></i> <strong>Server Management:</strong> Experience with local server setup and hosting.</li>
+        <li><i class="fas fa-database"></i> <strong>Database:</strong> Understanding of database concepts and integration.</li>
+    </ul>
+</div>
+
+<div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+    <h3><i class="fas fa-heart"></i> Soft Skills</h3>
+    <ul>
+        <li><i class="fas fa-rocket"></i> <strong>Quick Learner:</strong> High adaptability and eagerness to learn new technologies.</li>
+        <li><i class="fas fa-chess"></i> <strong>Decision Making:</strong> Decisive and confident in high-pressure environments.</li>
+        <li><i class="fas fa-clock"></i> <strong>Time Management:</strong> Reliable in meeting deadlines and delivering quality results under time constraints.</li>
+        <li><i class="fas fa-users"></i> <strong>Team Player:</strong> Collaborative approach to problem-solving and project development.</li>
+    </ul>
+</div>
+
+<!-- Future Goals Section -->
+<div style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+    <h3><i class="fas fa-star"></i> Future Goals</h3>
+    <ul>
+        <li><i class="fas fa-graduation-cap"></i> Complete B.Tech with excellence in Computer Science and Engineering.</li>
+        <li><i class="fas fa-code-branch"></i> Contribute to open-source projects and build a strong developer community presence.</li>
+        <li><i class="fas fa-trophy"></i> Develop innovative web applications that solve real-world problems.</li>
+        <li><i class="fas fa-chalkboard-teacher"></i> Share knowledge through tech blogs and mentoring fellow developers.</li>
+    </ul>
+</div>
+
+<div style="text-align: center; margin-top: 3rem;">
+    <a href="{{ url_for('home') }}" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">
+        <i class="fas fa-home"></i> Return to Home
+    </a>
+    <a href="{{ url_for('projects') }}" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; margin-left: 1rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);">
+        <i class="fas fa-code"></i> View My Projects
+    </a>
+</div>
+
+{% endblock content %}
